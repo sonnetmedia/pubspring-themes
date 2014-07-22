@@ -1,0 +1,151 @@
+.page_body{
+	padding-bottom: 2em;
+}
+
+article > header{
+	padding-bottom: .25em;
+}
+
+p.byline{
+	color: @gray;
+}
+
+ul#social_buttons{
+//margin: 4.1em 1.7em 0 0;
+
+list-style-type: none;position:absolute;top:1%;right:2%;}
+
+.blend-in{
+	border-color: @contentBackgroundColor;
+}
+
+.entry-meta{
+margin-top: 6em;	
+}
+.quote_small {
+	font-size: @baseFontSize + 5;
+}
+.wrapper{
+background-color: @contentBackgroundColor;
+margin: 2% auto;
+.image-shadow;
+width: 96%;
+}
+
+footer, footer p{
+margin-top: -1.2%;
+color: @gray;
+	.sans-small;
+		font-size: 11px;
+}
+
+footer p a{
+	color: @gray;
+	
+}
+
+.nav{
+	margin-top: 1em;
+	font-family: @monoFontFamily;
+}
+
+.quote p{
+	font-size: @baseFontSize + 4;
+	padding-right: 2em;
+}
+
+h1, h1 a{
+	color: @black;
+}
+
+h1 a.brand{
+	color: @blue;
+}
+
+h1 a:hover{
+	color: @orange;
+}
+
+
+h2, h2 a{
+	color: @orange;
+}
+h2 a:hover{
+	color: @black;
+}
+
+h3, h3 a{
+	color: @black;
+}
+
+h3 a:hover{
+	color: @orange;
+}
+
+
+.content-columns {
+//	.spanx (7);
+}
+
+ul.upcoming{
+	margin-left: 0;
+}
+ul.upcoming li{
+	list-style-type: none;
+font-family: @sansFontFamily;
+font-size: @baseFontSize - 4;
+
+}
+
+.button{
+.btn;
+}
+.mc_signup_submit, .button{
+text-align: left;float:left;
+}
+.mc_var_label{
+	display: none;
+}
+
+
+//
+.label,
+.badge {
+  font-size: @baseFontSize * .946;
+  font-weight: normal;
+  line-height: 16px; // ensure proper line-height if floated
+  color: @white;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @gray;
+}
+// Set unique padding and border-radii
+.label {
+  padding: 1px 4px 2px;
+  .border-radius(3px);
+}
+.badge {
+  padding: 1px 9px 2px;
+  .border-radius(9px);
+}
+
+// Hover state, but only for links
+a {
+  &.label:hover,
+  &.badge:hover {
+    color: @white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+
+//
+aside p{
+	margin-bottom: 0.25em;
+}
+
+aside.pubdate{
+	display: none;
+}

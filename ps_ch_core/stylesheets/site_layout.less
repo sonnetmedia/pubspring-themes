@@ -1,0 +1,141 @@
+//TOP SECTION
+.navbanner {
+	background-color: @blueDark;
+//	background: @blueDark url('images/background_books_294456_1.png') repeat left top;
+}
+.navbanner .container, .navbanner .container a {
+			color: @blue;// @grayLighter;
+}
+
+header.navbanner {
+	padding-bottom:  3em;
+}
+
+.navbanner a.brand {
+	color: @grayLight;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills a:hover {
+  color: @grayLight;
+  background-color: @blueDark;
+}
+
+h1 a.brand{
+	font-family:  "federico-web";
+	font-size: 30px;
+	color: @offWhite;
+	line-height: 1;
+}
+
+// enable the code beow to let the site name fade in. Would also have to set opacity statement below to opacity = 0.
+
+/*body.home h1 a.brand {
+	.fadein;	
+	//-moz-animation-delay:10s; /* Firefox *!/
+	//-webkit-animation-delay:10s; /*Safari and Chrome *!/
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	duration: 5s;
+	}
+body.home .quote {
+	.fadein;
+
+/*-moz-animation-delay:3s; /* Firefox *!/
+-webkit-animation-delay:3s; /*Safari and Chrome *!/*!/
+	-webkit-animation-duration: 7s;
+	-moz-animation-duration: 7s;
+	-ms-animation-duration: 7s;
+	-o-animation-duration: 7s;
+	duration: 7s;
+	
+}*/
+
+.wf-loading h1 a.brand{
+opacity: 1;
+}
+
+
+.quote p{
+	font-size: @baseFontSize + 12;
+	line-height: 1.4;
+//	color: @white;
+}
+
+.quote_attribution, .quote_attribution p, .quote_attribution p a{
+	font-size: @baseFontSize - 4;
+}
+
+
+///PAGE & ARTICLES
+
+.page_body {
+	//.shadow-light;	
+	margin-top: -24px;
+	background-color: darken(@grayLighter,3%);
+	//background-color: @grayLighter;
+	border: 1px solid darken(@grayLighter,9%);
+	-webkit-border-radius: 2px;
+	padding-top: 2em;
+	border-radius: 2px;
+	}
+body.home .btn {
+	margin-bottom: 4em;
+}	
+.page_body{
+padding-right: 2em;
+padding-left: 2em;
+	
+}	
+	
+.byline_author {
+	display: none;
+}
+ul.nav, time {
+font-family: @sansFontFamily;
+font-size: @baseFontSize - 4;
+text-transform: uppercase;
+	
+}
+
+footer p, footer p a, .btn {
+	font-family: @sansFontFamily;
+	font-size: @baseFontSize - 6;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+
+h1, h1 a,  h2, h2 a {
+	font-size: 42px;
+	color: @blueDark;//darken(@black, 5%);
+	line-height: 1.2;
+}
+.page_body{
+	margin-bottom: 5em;
+}
+
+	
+///SIDEBARs	
+.sidebar-section ul {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+.sidebar-section li {
+.sans-small;
+	margin-bottom: 2em;
+
+}
+
+.sidebar-section h6 {
+.sans;	
+font-size: @baseFontSize + 2;
+}
+
+.container {
+	margin-top: 40px;
+}
+

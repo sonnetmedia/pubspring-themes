@@ -1,0 +1,180 @@
+//GRID
+	@container-padding: 20px;
+	@max-width: 910px;
+	@min-width: 727px;
+	@gutter: 4.4%;
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Links
+@linkColor:             @brownLight;
+@linkColorHover:        darken(@linkColor, 15%);
+
+// Grays
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+//@offWhite:   			#f6f5f2;
+@offWhite:				#f8f7f5;
+
+// Accent colors
+@brownLight: 			#897955;
+@blue:                  #478ca3; //this is our primary color on this site
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffeeb8;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+// Highlight colors - text (quotes)
+@lines:                  @offWhite; //for hr
+@textShadow:            @white;
+// Buttons
+
+
+
+
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @offWhite;
+
+// Highlight colors - text (quotes)
+@highlight: lighten(@linkColor, 5%);
+@textShadow:            @white;
+
+
+
+//Sonnet 
+@contentBackgroundColor: @offWhite;
+@heroUnitBackgroundColor: darken(@contentBackgroundColor, 5%);
+@backgroundOpacity:.0001;
+@headingColor: 			@blue;
+
+
+
+
+
+// Scaffolding
+// -------------------------
+@footerHeight: 2em;
+@footerBackgroundColor:none;
+@bodyBackground:        @offWhite;
+@textColor:             @gray;
+
+@wrapperBackgroundColor:none;
+
+
+
+@import "http://fonts.googleapis.com/css?family=PT+Mono";
+
+@import "http://fonts.googleapis.com/css?family=Lora";
+
+
+// Typography
+// -------------------------
+@baseFontSize:          13px;
+@baseFontFamily:        Georgia, "Times New Roman", Times, serif;
+@baseLineHeight:        18px;
+@altFontFamily:         "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@baseParagraphFontSize:    16px;
+@baseParagraphLineHeight:  24px;
+
+@headingsFontFamily: 'Lora', Georgia, 'Times New Roman', serif;
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         @linkColorHover; // empty to use BS default, @textColor
+
+
+@brandFont:  'Lora', Georgia, 'Times New Roman', serif;
+
+@baseFontPixels:           13; //this should always be the same size as the baseFontSize but without px
+@onePx: 					1/@baseFontPixels ;
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+
+
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         darken(@white, 20%);
+
+@btnPrimaryBackground:              @blue;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputDisabledBackground:       @grayLighter;
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @linkColor;
+
+
+
+
+
+
+// Navbar
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:              @grayLighter;
+@heroUnitHeadingColor:            inherit;
+@heroUnitLeadColor:               inherit;
+
+

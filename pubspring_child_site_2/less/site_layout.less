@@ -1,0 +1,298 @@
+//.wrapper{background-color: @contentBackgroundColor;} hiding this 
+h1.entry-title{margin-bottom: .25em;}
+body {
+background-color: @bodyBackground;
+}
+
+body{
+background: url(http://sonnetmedia.com/static/img/bkgrnds/dark_mosaic.png) repeat center center #0d0502;
+}
+
+.page_body{
+background-color: @contentBackgroundColor;
+}
+
+/* (radius-top, radius-bottom) */
+.wrapper{
+.border-radius-corners(0px, 5px);
+}
+
+/* make sure page body and wrapper corners don't conflict when changing colors */
+.page_body{
+.border-radius-corners(5px, 0px);
+
+}
+.updated{font-size:11px;text-transform:uppercase;color:#646464;margin:0;padding:0;}
+
+
+.page_child p{
+font-size: @baseFontSize;
+line-height: @baseLineHeight;
+
+}
+.footer_bio{
+padding-top: 1em;
+.border-radius-corners(0px, 5px);		
+}
+
+
+footer p{
+font-size:@baseFontSize - 3;
+}
+h1{font-weight:normal;}
+
+.connect{
+	background-color: #FFF;
+	padding: 20px;
+	border: 1px solid #eee;
+	-webkit-box-shadow:0px 3px 3px 0px #555;
+	-moz-box-shadow:0px 3px 3px 0px #555;
+	box-shadow:0px 3px 3px 0px #555;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+			
+			
+		}
+
+.quote p{margin:0;padding:0;display:inline;}
+
+.entry-title{margin-bottom:1em;}
+
+//NAV
+//------------------------------------------------
+
+.navbanner{
+//30px padding at 13px base font
+		padding-top:2.3076923077em;
+		text-align:left;
+		margin-bottom:1em;
+	}
+
+
+
+//.article{padding-right:30px;} // what the hell is this?
+
+.nav li {
+display: inline;
+}
+
+.inline > li > a {
+  display: inline;
+  margin-right: 1.1538461538em;
+}
+
+#sidebar ul li, ul.sidebar_list li{
+padding: 0;
+margin-bottom: 0.7692307692em;
+line-height: 140%;
+	list-style-type: none;
+}
+
+#sidebar ul li.cat-item{}
+
+
+#sidebar ul, ul.sidebar_list{
+	margin:4px 0 2em 0;
+}
+
+#sidebar h6{
+	font-family: @headingFontFamily;
+	font-size: @baseFontSize + 6;
+	color: @brownLight;
+}
+
+
+.footer_bio{
+	padding: 1em .5em;
+/*	margin: 5em 0 0;*/
+}
+
+ul.rss li, ul.list_none li{
+list-style-type: none;
+
+}
+
+
+.thumbnails > li {
+    margin-bottom: @baseLineHeight * 2;
+}
+
+.dig-in{display:none;}
+
+article .widget_text{margin-bottom:3em;}
+//hr{width: 70%;}
+
+
+//TEXT
+//----------------------------------
+
+
+p a{
+	border-bottom: 1px dotted @linkColorHover;
+}
+
+
+.text_short p{
+margin-top: 3em;
+margin-bottom: 0;
+
+
+text-align: left;
+}
+
+
+h1 a.brand{
+	}
+	
+
+h1,h2,h3 {
+	font-family: @headingFontFamily;
+}
+
+
+h1 a.brand{
+color: @brownLight;
+	font-family: @headingFontFamily;
+	font-size: @baseParagraphFontSize + 25;
+	text-transform: none;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 #000;
+}
+	
+
+
+.row_spaced {
+  margin: 2em auto 2.5em;
+}
+
+
+
+
+
+// MIXINS
+//-----------------------------------------
+
+
+.row_spaced{
+	margin: 2em auto 2.5em;
+}
+
+
+
+
+// COLORS
+.light{color:@offWhite;}
+
+.footer_bio{
+	background-color: @grayDarker;
+	background-image: none;
+	color: @grayLight;
+	
+	/*
+	#gradient > .vertical(#000, #0d0502);
+	*/
+	
+	
+}
+.glyph {background-color:@blue;}
+
+
+h1{color:@red;}
+
+h1{
+margin-bottom: @baseLineHeight - 9;
+line-height: @baseLineHeight + 28;
+  font-size: @baseFontSize + 22;
+//	text-shadow: 1px 1px 0 @textShadow;	
+	font-family: @headingFontFamily;	
+}
+
+h2{
+
+  font-size: @baseFontSize + 16;
+//	text-shadow: 1px 1px 0 @textShadow;	
+	font-family: @headingFontFamily;	
+	font-weight: normal;
+}
+
+
+h2, h2 a{
+		color: darken(@headingsColor, 10%);
+}
+
+h2 a:hover{
+	color: lighten(@linkColor, 10%);
+}
+
+h3, h3 a{
+		color: lighten(@headingsColor, 5%);
+}
+
+h3 a:hover{
+	color: lighten(@linkColor, 15%);
+}
+
+
+li.a{
+	color: @linkColor;
+}
+li.current a{
+	color: @blue;
+}
+
+
+
+
+
+.nav > li > a:hover {
+  background-color: darken(@offWhite, 5%);
+  color: lighten(@linkColor, 10%);
+}
+
+
+
+
+//right nav
+//--------------------------------
+.nav_position{
+text-align: right;
+float: right;
+}
+
+
+//may need to add .navbar to this? 
+.nav {
+//	margin-top:-1.9230769231em;
+	margin-top:-3.6923076923em;
+}
+
+.navbar {
+  margin-bottom: -14px;
+}
+
+
+
+.nav {
+  margin-left: 0;
+  margin-bottom: @baseLineHeight;
+  list-style: none;
+  
+  font-size: @baseParagraphFontSize - 2;
+}
+
+.nav ul li.last{margin-right:0;}
+
+
+
+
+@media only screen and (max-width: 767px) {	
+
+	.nav{margin-top:0;}
+	
+	}
+
+
+
+
+

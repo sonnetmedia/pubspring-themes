@@ -1,0 +1,393 @@
+@SitePrefix: "lesliemaitland"; //CUSTOM SITE
+
+//GRID
+// -----------------------------------------------------
+
+body{background: url(images/bkgrnd-e9e8e3.jpeg) repeat center center;}
+
+
+.page_body{padding-top:2.3em;padding-bottom:4em;}
+.row_spaced{
+//	margin: 1em auto 2em;
+	margin: 0 auto 2em;
+}
+
+//.wrapper{width:100%;}
+
+#sidebar article{margin-bottom:1em;}
+
+#sidebar ul li, #sidebar ul {
+list-style-type: none;
+margin-left: 0;
+
+}
+
+.padding-bottom{
+			padding-bottom: 3em;
+}
+ul.post_list {
+margin-left: 0;
+}
+ul.post_list li{
+list-style-type: none;
+line-height: 22px;
+margin-bottom: 1em;
+}
+ul.post_list li a{
+font-size: 18px;
+}
+.highlight_dark p{color:@redDark;}
+
+
+
+// TYPE TREATMENT
+// -----------------------------------------------------
+
+
+
+h1 a.brand{
+color: lighten(@green, 35%);
+	font-family: @brandFont;
+	font-size: @baseParagraphFontSize + 25;
+	text-transform: none;
+	font-weight: 400;
+	text-shadow: none;
+}
+
+
+
+.sidebar-box h6{	
+		font-size: @baseParagraphLineHeight;
+		color: @highlight;
+		line-height: @baseLineHeight + 7;
+		margin-bottom: .25em;
+
+}
+
+//nav_inline  modified
+//-----------------
+
+//right nav
+//--------------------------------
+.nav{margin-left: -10px;}
+
+//.navbanner{text-align:left;/*margin-top:1em;*/}
+
+
+//may need to add .navbar to this? 
+//.nav {margin-top:-.25em;}
+
+
+//.nav {float:right;
+//  margin-left: 0;
+//  margin-bottom: @baseLineHeight;
+//  list-style: none;
+//  
+//  font-size: @baseParagraphFontSize - 1;
+//}
+
+
+.nav li{font-family:@headingsFontFamily;font-size:127%;  line-height: @baseLineHeight;}
+
+.nav li.current a{color:lighten(@green, 10%);}
+
+.nav li a{
+  color: @grayLight;
+  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+}
+
+
+li ul li{text-shadow:none;}
+ul.dropdown-menu li.menu-item a{color:@grayDark;text-shadow:none;}
+
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: lighten(@linkColor, 5%);
+  background: #111;
+}
+
+
+.nav > li > a:hover {
+  background-color: lighten(@green, 35%);
+  color: @green;
+  text-shadow: none;
+}
+
+
+form, h3#reply-title a, #respond{background-color:darken(@contentBackgroundColor, 3%);}
+
+
+//.navbanner{background-color:#857b73;color:@grayLighter;margin-bottom:0;
+//.gradientBar(#857b73, darken(#857b73, 25%));
+//}
+
+
+//
+//.navbanner{background-color:darken(@green, 7%);color:@offWhite;margin-bottom:0;
+//.gradientBar(#857b73, darken(#857b73, 25%));
+//border-bottom: 4px solid @grayLight;
+//.gradientBar(@green, darken(@green, 25%));
+//}
+
+.navbanner{	background: url(images/background_mcclennen2.jpg) no-repeat right bottom #0C0C0C;}
+
+//.navbanner{background-color:@contentBackgroundColor;margin-top:2em;}
+
+//.wrapper{.shadow;}
+
+
+.navbanner{
+//30px padding at 13px base font
+		padding-top:2.5em;
+}
+
+
+
+
+//EXTRAS
+// -----------------------------------------------------
+//.layered-paper {
+//	padding: 1.1538461538em;
+//    background: darken(@heroUnitBackgroundColor, 5%);
+//    box-shadow:
+//        0 1px 1px rgba(0,0,0,0.33), /* The top layer shadow */
+//        0 10px 0 -5px @heroUnitBackgroundColor, /* The second layer */
+//        0 10px 1px -4px rgba(0,0,0,0.33), /* The second layer shadow */
+//        0 20px 0 -10px @heroUnitBackgroundColor, /* The third layer */
+//        0 20px 1px -9px rgba(0,0,0,0.33); /* The third layer shadow */
+//               
+//}
+//
+
+.hero-unit, .well h2{
+text-transform: uppercase;
+}
+
+
+h4.event-day{font-weight:bold;
+font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+//.carousel{	overflow: hidden;}
+
+
+
+.slideshow_quote{
+height: 110px;
+//	margin: 1em auto 2em;
+padding: 0
+	margin: 0 auto 2em;
+}
+
+.highlight, .highlight p{color:@red;}
+
+
+
+.footer_bio{
+//margin-top: 4em;
+padding-top: 4em;
+//background-color: @heroUnitBackgroundColor;
+//#gradient > .vertical(#d4cfc8, #e1ded9);
+//.border-radius(6px);
+color: @grayDark;
+}
+
+
+/*hr{border-color: #dbd8d1;
+}*/
+
+hr{
+border: 0;
+	border-top: 1px solid #cec9c0;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	display: block;
+	height: 1px;
+	width: 70%;
+
+}
+
+
+
+h1.entry-title, h1.post-title a, h1.post-title a:link, h1.post-title a:active, h1.post-title a:visited, h2 a, h2 a:link, h2 a:active, h2 a:visited{
+color: lighten(@red, 1%);
+//color: #be3420;
+//color: @black;
+font-weight: 400;
+
+}
+
+h1.entry-title{font-size: 300%;margin-bottom:.45em;}
+h1.book-title{font-size: 350%;margin-bottom:.145em;}
+
+
+.thumbnail{border:none;}
+
+.thumbnail img{.shadow;}
+
+// page_curl_shadow.less
+
+
+
+ul.box { position: relative;
+z-index: 1; /* prevent shadows falling behind containers with backgrounds */
+overflow: hidden;
+list-style: none;
+margin: 0;
+padding: 0; }
+
+
+ul.box li {
+position: relative;
+float: left;
+width: 90%;
+height: 150px;
+padding: 2em;
+border: 1px solid #efefef;
+margin: 0 30px 30px 0;
+background: #fff;
+-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; 
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset; }
+
+
+ul.box li:before,
+ul.box li:after {
+content: '';
+z-index: -1;
+position: absolute;
+left: 10px;
+bottom: 10px;
+width: 90%;
+max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+max-height: 100px;
+height: 55%;
+-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+-webkit-transform: skew(-15deg) rotate(-4deg);
+-moz-transform: skew(-15deg) rotate(-4deg);
+-ms-transform: skew(-15deg) rotate(-4deg);
+-o-transform: skew(-15deg) rotate(-4deg);
+transform: skew(-15deg) rotate(-4deg); }
+
+
+ul.box li:after {
+left: auto;
+right: 10px;
+-webkit-transform: skew(15deg) rotate(4deg);
+-moz-transform: skew(15deg) rotate(4deg);
+-ms-transform: skew(15deg) rotate(4deg);
+-o-transform: skew(15deg) rotate(4deg);
+transform: skew(15deg) rotate(4deg); }
+
+//SOCIAL BUTTONS
+
+//SOCIAL ICONS
+//----------------------------------------------
+
+ul#social_buttons{margin: 0;list-style-type: none;
+float: right;
+
+}
+
+ul#social_buttons li{margin-bottom: 1em;text-align: center;}
+li#twitter_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 36px;
+background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat left top;
+	
+}
+
+li#twitter_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+background-position: left bottom;
+}
+
+
+li#facebook_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 26px;
+	background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -35px top;
+}
+
+li#facebook_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+	background-position: -35px bottom;
+}
+
+
+
+
+li#vimeo_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 27px;
+
+text-align: -9000em;	
+	background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -63px top;
+}
+li#vimeo_icon a:hover{
+
+	background-position: -63px bottom;
+}
+
+
+
+li#rss_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 24px;
+
+text-align: -9000em;	
+	background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -87px top;
+}
+
+li#rss_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+	background-position: -87px bottom;
+}
+
+#search-2{float:right;margin-top:-15px;}
+
+//FOOTER
+//.footer_bio{
+//	background-color: @bodyBackground;
+//	background-image: none;
+//	color: @grayLight;
+//	
+//	/*
+//	#gradient > .vertical(#000, #0d0502);
+//	*/
+//	
+//	
+//}
+
+
+.footer-nav{display: none;list-style-type: none;}
+.footer-nav li{list-style-type: none;display: inline-block;text-transform: lowercase;margin-left: 1em;font-size: @baseFontSize + 3;}
+
+
+
+@media only screen and (max-width: 767px) {	
+
+	.nav{margin-top:0;}
+	
+	}
+
+//.navbanner{margin-bottom:2.3em;}
+.page_heading h2, .page_heading h2 a, .page_heading a, .well h2 a{color:@grayLighter;}

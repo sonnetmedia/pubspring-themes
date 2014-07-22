@@ -1,0 +1,74 @@
+@import url("../pubspring_core_authors/style.css");
+/*
+Theme Name:     PubSpring Child Theme Laird Hunt's Kind One Novel
+Theme URI:      http://pubspring.us
+Description:    Child theme for the Pubspring Framework kind one novel
+Author:         Bud Parr
+Author URI:     http://sonnetmedia.net
+Template:       pubspring_core_authors
+Version:        0.1.2a
+*/
+// please indicate site name: 
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+//@import "variables.lessTK"; // Modify this for custom colors, font-sizes, etc
+@import "site_variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+//@import "sm_grid_wrapper.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+// Components: common
+//@import "sprites.less";
+@import "dropdowns.less";
+//@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "navs.less";
+@import "navbar.less";
+//@import "breadcrumbs.less";
+@import "pagination.less";
+//@import "pager.less";
+
+// Components: Popovers
+@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
+
+// Components: Misc
+@import "thumbnails.less";
+@import "labels-badges.less";
+//@import "progress-bars.less";
+//@import "accordion.less";
+//@import "carousel.less";
+//@import "hero-unit.less";
+
+//@import "footer_sticky-on-bottom.less";
+@import "footer_style.less";
+@import "mods.less";
+//SITE
+@import "site_layout.less";
+@import "responsive_wrapper.less"; // Has to be last to override when necessary
+@import "responsive.less"; // Has to be last to override when necessary
+//@import "swing.less";
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary

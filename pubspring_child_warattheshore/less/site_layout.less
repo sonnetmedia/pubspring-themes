@@ -1,0 +1,343 @@
+//------------------------------------
+@SitePrefix: "warattheshore"; //CUSTOM SITE
+
+//GRID
+// -----------------------------------------------------
+@container-padding: 20px;/* left/right padding */
+@max-width: 960px;
+@min-width: 727px;
+@gutter: 4.4%;
+
+
+
+
+.modal h3, .modal p{color:#222;}
+.wrapper{width:100%;}
+
+
+.row_spaced{
+//	margin: 1em auto 2em;
+	margin: 0 auto 2em;
+}
+
+//make the book's short description nice and big on the home page
+#intro_text p{
+		color: #000;
+text-shadow: none;
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+font-size: 22px;
+line-height: 32px;
+text-align: center;margin-top:-20px;
+	}
+	
+	
+//may not need this?	
+.navbanner .container .row{
+	text-align: center;margin: 0 auto;
+}
+
+//----things to not show---------------
+.footer_bio, .praise-for, .page_heading, a.brand{
+		display:none;
+}
+
+
+
+
+
+//nav elements
+.nav > li > a {
+color: @grayLighter;
+text-transform: uppercase;
+//  	  text-shadow: 0 -1px 0 #FFF;
+}
+
+.nav > li.current-menu-item > a {
+color: @grayLighter;
+text-transform: uppercase;
+  background-color: @black;
+}
+
+
+.nav > li > a:hover {
+  background-color: @black;
+  color: @grayLighter;
+}
+
+
+.nav li.current a{color:@grayLight;}
+
+.nav li a{
+  color: @offWhite;
+  text-shadow: 0 -1px 0 rgba(0,0,0,1);
+}
+
+
+
+.nav > li > a {
+color: @grayLighter;
+text-transform: uppercase;
+//  	  text-shadow: 0 -1px 0 #FFF;
+}
+
+.nav > li.current > a {
+color: @grayLighter;
+text-transform: uppercase;
+  background-color: @black;
+}
+
+
+.nav > li > a:hover {
+  background-color: @black;
+  color: @grayLighter;
+}
+
+.nav-pills > li > a {
+  padding-top: 7px;
+}
+
+
+
+.nav{
+	text-align: center;
+}
+
+//nav_inline  modified
+//-----------------
+
+//right nav
+//--------------------------------
+.nav_position{
+text-align: right;
+
+}
+
+.navbanner{text-align:center;
+
+/*margin-top:1em;*/
+
+}
+
+
+//may need to add .navbar to this? 
+.nav {
+//margin-top:1.4615384615em;
+}
+
+
+.nav {
+//  margin-left: 0;
+  margin-bottom: @baseLineHeight;
+  list-style: none;
+  font-size: @baseParagraphFontSize - 1;
+}
+
+
+
+
+
+.navbanner{
+/*height: 280px;*/
+//background-color: rgba(0, 0, 0, 0.59);
+background-color: none;
+color:@grayLighter;margin-bottom:2em;
+//border-bottom: 1px solid @brownLight;
+
+}
+
+.navbanner{
+//30px padding at 13px base font
+		padding-top:1.5em;
+}
+
+
+
+
+
+
+
+//contact information make smaller
+.page_child p{font-size:@baseFontSize;}
+
+
+//this might not be needed because the .page_child does the trick
+.contact_info p{font-size:@baseParagraphFontSize - 3;line-height: @baseLineHeight;
+}
+
+
+
+
+//add a background layer to text elements so they show over the image
+.layered-paper, .book_synopsis, .post-box, .quotes {
+padding: 1.5384615385em;
+    background: @heroUnitBackgroundColor;
+    box-shadow:
+        0 1px 1px rgba(0,0,0,0.43), /* The top layer shadow */
+        0 10px 0 -5px @heroUnitBackgroundColor, /* The second layer */
+        0 10px 1px -4px rgba(0,0,0,0.43), /* The second layer shadow */
+        0 20px 0 -10px @heroUnitBackgroundColor, /* The third layer */
+        0 20px 1px -9px rgba(0,0,0,0.43); /* The third layer shadow */
+}
+
+
+.layered-paper a, .book_synopsis a, .post-box a, .quotes a{
+	color: @grayLight;
+}
+.layered-paper a:hover, .book_synopsis a:hover, .post-box a:hover, .quotes a:hover{
+	color: @blue;
+}
+
+.quotes{margin-bottom:1em;}
+
+//-----------------------------
+//QUOTES
+.slideshow_quote{margin-bottom:2em;padding:0;}
+
+.carousel{	overflow: hidden;}
+
+
+.quote p{margin: 0 0 20px 0;padding: 0;display: block;}	
+
+.slideshow_quote, .slideshow_quote p{
+//	margin: 1em auto 2em;
+	margin: 0 auto 2em;
+//	color: @black;
+color: #695838;
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.6);
+	    font-size: @baseParagraphFontSize + 3%;
+	
+}
+
+.quote_box{height:210px;width:100%;}
+
+.quote{
+	color: @brownLight;
+	font-style: normal;
+}
+
+footer a{
+	color: @grayLighter;
+}
+
+footer a:hover{
+	color: @gray;
+}
+
+h1, h2{
+	color: @brownLight;
+}
+
+hr{
+border: 0;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #444;
+	display: block;
+	height: 1px;
+	width: 70%;
+
+}
+
+footer{
+//	position: absolute;
+//	bottom: 2px;
+margin-top: 3em;
+}
+
+
+//QUOTE STYLES
+//-------------------
+
+//BP
+
+.quote {
+  margin-bottom: 0;
+  font-size: @baseParagraphFontSize + 3%;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+  color: @highlight;
+  font-style: italic;
+}
+
+
+.quote p{
+  //margin: 0;
+  font-size: @baseParagraphFontSize + 3%;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+  color: @highlight;
+  font-style: normal;
+//  display: inline;
+}
+
+.quote_attribution p{
+
+    font-size: @baseParagraphFontSize - 3%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.caption, .caption p{
+font-size: @baseFontSize;
+}
+
+
+.quote_large {
+  margin-bottom: 0;
+  font-size: @baseParagraphFontSize + 4%;
+  font-weight: 200;
+  line-height: @baseLineHeight * 1.5;
+  color: @highlight;
+  font-style: italic;
+}
+
+
+
+
+
+//END QUOTE STYLES
+
+
+
+@media only screen and (max-width: 767px) {	
+
+	.nav{margin-top:0;}
+	
+	}
+
+//.navbanner{margin-bottom:2.3em;}
+
+//BUTTONS
+.btn {
+  display: inline-block;
+  .ie7-inline-block();
+  padding: 4px 10px 4px;
+  margin-bottom: 0; // For input.btn
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @grayLighter;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255,255,255,.75);
+  vertical-align: middle;
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight);
+  border: 1px solid @btnBorder;
+  border-bottom-color: darken(@btnBorder, 10%);
+  .border-radius(4px);
+  @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  .box-shadow(@shadow);
+  cursor: pointer;
+
+  // Give IE7 some love
+  .ie7-restore-left-whitespace();
+}
+
+
+//this styles the book widget 
+
+.thumbnail{border:none;}
+
+.thumbnail img{.shadow}
+
+
+
+

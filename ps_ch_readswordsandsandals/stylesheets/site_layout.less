@@ -1,0 +1,338 @@
+body {
+	background: url('/wp-content/themes/ps_ch_readswordsandsandals/images/bkgrnd-readswordsandsandals-v3.jpg') repeat left top @black;
+}
+
+////////////////////// NAV //////////////////////
+
+ul.dropdown-menu li a {
+	text-align: left;
+	font-size: @baseFontSize * .9;
+	color: @red;
+}
+.navbar .navbar-inner { 
+background: none;
+//background: url('/wp-content/themes/ps_ch_readswordsandsandals/images/test_1.jpg') repeat center top #111;
+//background: url('/wp-content/themes/ps_ch_readswordsandsandals/images/bkgrnd-readswordsandsandals-v3.jpg') repeat center top #111;
+border: none;
+}
+
+.navbar {
+//	margin-top: 5px;
+}
+//body.home .navbar .nav 
+.navbar .nav 
+{
+position: relative;
+left: 19.5%;
+float: none;
+float: left;
+text-align: center;
+margin-top: -35px;
+font-family: @headingsFontFamily;
+//margin-left: 90px;
+	
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background: none;
+//  color: #b3966c;
+}
+
+.navbar .nav > li.current-menu-parent > a {
+  color: @brownLight;	
+  background: none;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+//  color: @red;
+//  text-decoration: none;
+  background: none;
+//  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+ // -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+//  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+//body.home ul.nav li
+ul.nav li {
+	font-size: 22px;
+}
+
+
+.navbar .navbar-inner {
+	text-align: center;
+}
+h1 a.brand {
+	height: 126px;
+	width: 760px;
+	min-width: 760px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: visible;
+	text-indent: -9000em;
+	background: url(/wp-content/themes/ps_ch_readswordsandsandals/images/readswordsandsandals_header_130227.png) no-repeat left top;		
+
+
+}
+.nav_main_content {
+//	.offset(2);
+	width: 762px;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+text-shadow: 1px 1px 2px #000000;
+        filter: dropshadow(color=#000000, offx=1, offy=1);
+}
+
+
+////////////////////// EXTRAS //////////////////////
+
+aside.publisher, .archive .byline_author {
+display:none;
+}
+.show_text {
+	.dig-in;
+}
+
+
+.current-menu-parent a.dropdown-toggle {
+	color: @red;
+}
+
+////////////////////// HEADING  //////////////////////
+h6 {
+	.no-margin;
+	font-size: 24px;
+	line-height: 1.4;
+}
+h2.page-header {
+	color: @red;
+}
+
+h2.entry-meta {
+	background-color: darken(@textColor, 35%);
+		background-color: rgba(181, 135, 40, 0.27);
+	padding: 4px;
+	margin-top: 2em;
+}
+
+a.related-posts {
+	float: left;margin-right: 25px;
+}
+
+.date, .date-year {
+	color: darken(@textColor, 24%);
+} 
+
+.featured_box .date, .featured_box .date-year {
+	color: lighten(@textColor, 30%);
+} 
+
+////////////////////// BOXES //////////////////////
+
+body.home .box_inner {
+	padding: 2em;
+}
+body.home .box {color: #999;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.61);
+	
+}
+
+
+.section-title{
+ 	border-bottom: 1px solid @grayDark;
+	margin-bottom: 2em;
+}
+
+.sidebar-section {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+body.home .sidebar-section {
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+
+
+input {
+.btn;
+.btn-small;
+//.inverse;
+//margin-bottom: 1em;
+text-align: left;
+background-color: @brownLight;
+}
+.mc_signup_submit {
+text-align: left;
+} 
+
+.mc_var_label {
+	.hidden;
+}
+h1.book-title {
+	font-size: @baseFontSize * 2.7;
+}
+.navbar .brand {
+  font-size: @baseFontSize + 25;
+  font-weight: 400;
+  color: @yellow;
+  text-shadow: 0 1px 0 @black;
+}
+
+.navbar-inner ul li{
+	text-align: center;
+}
+.navbar .brand {
+  font-size: @baseFontSize + 47;
+  font-weight: 400;
+  color: @yellow;
+  text-shadow: -1px 3px 0 @black;
+  text-align: left;
+  float: left;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 6px;
+  
+}
+
+.navbar .brand {
+	text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+//	      color: #9c8468;
+//	      opacity: 0.3;
+//float: none;
+text-align: center;
+
+}
+
+.page_body{
+	margin-bottom: 5em;
+}
+body.home .books-list {
+	.fadein;
+
+/*-moz-animation-delay:3s; /* Firefox *!/
+-webkit-animation-delay:3s; /*Safari and Chrome *!/*/
+	-webkit-animation-duration: 7s;
+	-moz-animation-duration: 7s;
+	-ms-animation-duration: 7s;
+	-o-animation-duration: 7s;
+	duration: 7s;
+	
+}
+
+.wf-loading h1 a.brand{
+opacity: 0;
+}
+hr {
+  margin: 26px 0;
+  border: 0;
+  border-top: 1px solid #0a0501;
+  border-bottom: 1px solid lighten(#0a0501, 5%);
+//  display: none;
+  visibility: hidden;
+}
+
+
+.quote p{
+	font-size: @baseFontSize + 14;
+	line-height: 1.4;
+//	color: @white;
+}
+
+
+.cover_thumbs_large {
+	width: 42%;float:left;min-height: 265px;margin-right: 8%;
+}
+
+.cover_thumbs_small {
+	width: 10%;float:left;min-height: 220px;margin-right: 2%;
+}
+
+
+.featured_box {
+	-webkit-border-radius: 3px;
+	    border-radius: 3px;
+	    background-color: #000;
+//	    background-color: rgba(0, 0, 0, 0.31);
+		padding: 1.5em 1.5em 10px;
+	}
+	
+.featured_box {
+	background-color: rgba(181, 135, 40, 0.27);
+}	
+	
+article p a{
+	color: @white;
+	border-bottom: 1px dotted @grayLighter;
+}
+
+p{
+	text-shadow: 0px 1px 1px #000;
+}
+
+.page-header{
+	border-bottom-style: none;
+}
+
+.entry-title{
+	color: @grayLighter;
+}
+
+ul.thumbnail{
+	list-style-type: none;
+}
+.thumbnail{border:none;list-style-type: none;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: @grayLighter;
+  background:none;
+}
+.nav-pills > .active > a:hover{
+	color: @white;
+}
+
+
+footer p, footer a{
+		color: darken(@gray, 3%);
+		text-shadow: 0px 1px 1px #000;
+		font-family: @sansFontFamily;
+		font-size: @baseFontSize - 6;
+}
+
+h2.entry-title a, .tribe-events-event-meta-desc, .tribe-events-event-day {
+	color: @white;
+}
+
+#tribe-events-loop .tribe-events-event-meta-desc, #tribe-events-loop a, .events-archive .entry-title a, .tribe-events-event-meta-desc, .tribe-events-event-day {
+color: @white;
+}
+
+ul.upcoming{
+	margin-left: 0;
+}
+ul.upcoming li{
+	list-style-type: none;
+font-family: @sansFontFamily;
+font-size: @baseFontSize - 4;
+
+}
+.body.home p a {
+	color: #514533;
+}
+
+
+body.blog .post-box {
+	padding-right: 60px;
+}
+
+.featured-image {
+	float: left;margin-right: 1em;
+	margin-bottom: .5em;
+}

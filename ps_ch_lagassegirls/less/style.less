@@ -1,0 +1,100 @@
+/*
+Theme Name:     PubSpring Child Theme lagassegirls
+Theme URI:      http://pubspring.us
+Description:    Child theme for the Pubspring Framework
+Author:         Bud Parr
+Author URI:     http://sonnetmedia.net
+Template:       pubspring
+Version:        0.121217
+*/
+// please indicate site name: 
+@import url("../pubspring/style.css");
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "site_variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "foundation_grid.less";
+//@import "sm_grid_wrapper.less";
+@import "sm_grid_no_wrapper.less"; //USE for FULL WIDTH SITES
+@import "footer_sticky-on-bottom.less";
+
+
+// Base CSS
+@import "type.less";
+//@import "code.less";
+@import "forms.less";
+//@import "tables.less";
+
+// Components: common
+//@import "sprites.less";
+@import "dropdowns.less";
+//@import "wells.less";
+@import "component-animations.less";
+@import "close.less";
+@import "component_variables.less";
+
+// Components: Buttons & Alerts
+@import "buttons.less";
+@import "button-groups.less";
+@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+//@import "top_bar.less";
+
+
+// Components: Blog
+@import "blog_posts_date_footer.less";
+
+// Components: Popovers
+@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
+
+// Components: Misc
+@import "thumbnails.less";
+@import "labels.less";
+@import "badges.less";
+@import "progress-bars.less";
+//@import "accordion.less";
+//@import "carousel.less";
+//@import "hero-unit.less"; 
+//@import "page_heading.less"; //sames as hero unit, but small
+@import "footer_style"; //makes footer text small, usually 11px
+//@import "featured-image-support.less"; //WP ONLY adds div styling to place caption under featured images in WP
+//@import "hr_fancy.less"; //nice fancy hr - example at benjaminanastis.com source i think from css-tricks
+@import "top_shadow";
+
+//ANIMATION
+//@import "animate.less";
+//@import "fadeIn.less";
+//@import "fadeInDownBig.less";
+//@import "3d_book_covers.less"; //3d book covers. source: http://srobbin.com/blog/3d-css-book-covers/
+
+//SITE
+@import "site_layout.less";
+
+// Utility classes
+@import "global_utilities.less"; // Has to be last to override when necessary
+
+//MOBILE
+@import "mobile_foundation_grid.less";
+@import "mobile_show_hide.less";
+@import "mobile_classes.less";
+
+
+.navbar .nav > li > a,
+ .navbar .dropdown-menu a {
+   color: #C82224;
+   text-shadow: none;
+ }

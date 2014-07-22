@@ -1,0 +1,171 @@
+// Variables.less
+// Variables to customize the look and feel of the site
+// -----------------------------------------------------
+
+//GRID
+	@container-padding: 20px;
+	@max-width: 960px;
+	@min-width: 727px;
+	@gutter: 4.4%;
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+@import "http://fonts.googleapis.com/css?family=PT+Serif";
+
+//typography
+@baseFontSize:             13px;
+@baseFontPixels:           13; //this should always be the same size as the baseFontSize but without px
+@baseParagraphFontSize:    17px;
+@baseParagraphLineHeight:  24px;
+@baseFontFamily:      Helvetica, Arial, "Lucida Grande", sans-serif;
+@headingsFontFamily: "PT Serif" ,Georgia,   "Times New Roman", Times, serif;
+@baseLineHeight:        21px;
+@brandFont: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+
+//this is a helper to calculate ems
+@onePx: 					1/@baseFontPixels ;
+
+
+
+//Sonnet 
+@pageBackgroundColor: @blue;
+@contentBackgroundColor:none;
+@bodyBackground:none;
+@heroUnitBackgroundColor:rgba(0, 0, 0, 0.67);
+@backgroundOpacity:1;
+@textColor:             @grayLighter;
+@headingColor: 			darken(@highlight, 15%);
+@wrapperBackgroundColor:none;
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Links
+@linkColor:             @white;
+@linkColorHover:        darken(@linkColor, 15%);
+
+// Grays
+@black:                 #111;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+@offWhite:   			#efece5;
+
+// Accent colors
+@blue:                  #2f3d6a;
+@brownLight: 			#a69a85;
+@blueDark:              #0064cd;
+@green:                 #6ea0b0;
+@red:                   #9d261d;
+@yellow:                #ffeeb8;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Highlight colors - text (quotes)
+@highlight: @black;
+@lines:                  @grayDarker; //for hr
+@textShadow:            @grayDark;
+// Buttons
+@primaryButtonBackground:    @grayDark;
+@btnBackgroundHighlight:		@gray;
+@btnBackground:					@grayDark;
+@btnBorder: 				@gray;
+
+
+
+// Tables
+// -------------------------
+@tableBackground:                   transparent; // overall background-color
+@tableBackgroundAccent:             #f9f9f9; // for striping
+@tableBackgroundHover:              #f5f5f5; // for hover
+@tableBorder:                       #ddd; // table and cell border
+
+
+// Buttons
+// -------------------------
+@btnBackground:                     @black;
+@btnBackgroundHighlight:            darken(@gray, 10%);
+@btnBorder:                         darken(@grayDark, 20%);
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+
+
+// Forms
+// -------------------------
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputDisabledBackground:       @grayLighter;
+
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @linkColor;
+
+
+
+
+
+// Hr border color
+// -------------------------
+@hrBorder:                @offWhite;
+
+// Highlight colors - text (quotes)
+@highlight: @brownLight;
+@textShadow:            @grayDark;
+
+
+// Navbar
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @black;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+
+
+// Hero unit
+// -------------------------
+@heroUnitBackground:              @grayLighter;
+@heroUnitHeadingColor:            inherit;
+@heroUnitLeadColor:               inherit;
+
+

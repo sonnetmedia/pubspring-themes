@@ -1,0 +1,421 @@
+body{
+background: url(/wp-content/themes/pubspring/images/bckgrnds/extra_clean_paper.png) repeat top center @white;
+}
+
+.navbanner .row{	
+background: url(images/susan_isaacs_cropped_v2.jpg) no-repeat 92% top;
+background-color:@black;
+height: 350px
+
+}
+
+.navbanner{
+background-color: @black;
+border-bottom: 4px solid @brownLight;
+
+}
+
+.page_body{
+padding-top: 3.4615384615em;
+background-color: rgba(255, 255, 255, 0.5);
+//	background-color: rgba(0, 0, 0, 0.48);
+// .border-radius-corners(5px, 0px);
+}
+
+
+.page_heading {display:none;}
+body.page .page_heading {display:block;}
+
+.page_heading {
+background:none;
+//border-bottom:1px solid @red;
+}
+
+
+.post-type-archive-sm_writing .page_heading{display:block;}
+.quote p{
+// margin: 0;
+color: @grayDark;
+font-size: @baseParagraphFontSize + 5%;
+}
+
+.navbanner .quote p{ color:@red; font-weight:100;font-size: @baseParagraphFontSize + 12%;margin-top:1.2em;font-style:italic;line-height: 130%;
+}
+
+.padding-top{ 
+//		add this padding if not using a background color for the wrapper 
+padding-top: 3em;
+margin-bottom: 0;
+}
+
+/* (radius-top, radius-bottom) */
+//.wrapper{.border-radius-corners(0px, 5px);}
+/* make sure page body and wrapper corners don't conflict when changing colors */
+
+
+.footer_bio p{
+font-size: @baseParagraphFontSize + 2;
+line-height: @baseParagraphLineHeight + 1;
+}
+
+
+footer#content-info, .footer_bio{
+background-color: rgba(0, 0, 0, 0.29);
+background-image: none;
+color: @offWhite;
+
+
+}
+
+.footer_bio{
+padding: 1em .5em;
+/*	margin: 5em 0 0;*/
+}
+
+
+
+.thumbnail{border:none;}
+
+.thumbnail img{.shadow}
+
+.page_footer .mc_var_label{
+color: #999;
+}
+.mc_signup_submit, .button{
+text-align: left;float:left;
+}
+
+//NAVIGATION
+.nav { margin-top: .5em; }
+.nav li{font-family:@altFontFamily;font-weight:normal;text-transform:uppercase;}
+
+.nav li a{text-shadow:none; color:#666;}
+
+
+.nav-pills > a:hover, 
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+color: @white;
+background: none;
+background-color: transparent;
+}
+
+
+.caret{
+.opacity(70);
+border-top-color: @grayLight;
+border-bottom-color: @grayLight;
+}
+
+
+// Open dropdowns
+// -------------------------
+.nav-tabs .open .dropdown-toggle,
+.nav-pills .open .dropdown-toggle,
+.nav > .open.active > a:hover {
+color: @white;
+background-color: @grayDark;
+border-color: @grayDark;
+}
+
+
+// end navigation
+
+.dig-in{margin-bottom: 2em;clear: both;}
+
+
+// widget SPECIFIC
+// -----------------------------------------------------
+
+ul.upcoming {list-style-type: none;margin-left: 0;}
+#sidebar ul.upcoming {width: 90%;}
+.frontpage > ul.upcoming li {width: 220px;display:block;float: left;}
+.frontpage > ul.upcoming li div{padding-right: 45px;}
+
+
+li > div.when{color:#478ca3;}
+li > div.event{color:#478ca3;}	
+.frontpage li > div.when{font-size: 1.2em;margin-bottom: .3em;}
+.frontpage li > div.event{font-size: 1.4615384615em;line-height: 1.307em;}	
+.frontpage > .dig-in{text-align: center;padding: 2em auto;font-style: italic;}
+
+
+// TEXT
+// --------------------------------------------------
+
+h1, h2, h3, h4,.nav{ font-weight: 400;}
+
+h1 a.brand{
+//color: @headingColor;	
+//color: @white;
+color: darken(@white, 12%);
+}
+
+h2, h3{color:@grayDark;}
+
+.page_heading h2{font-size:@baseParagraphFontSize + 18; color:@linkColorHover;}
+
+
+.caption{font-family:@altFontFamily;font-size: 10px;}
+h1.entry-title{
+margin-bottom: .125em;
+
+}
+h1.book-title{font-size:@baseFontSize + 34;margin-bottom:.25em;}
+
+
+li.a{
+color: @linkColor;
+}
+li.current a{
+color: @blue;
+}
+.navbanner h1{margin-top:52px;}
+h1 a.brand{
+font-family: @brandFont;
+font-size: @baseParagraphLineHeight + 44;
+font-weight: normal;
+letter-spacing: 0.05em;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);		
+}
+
+
+
+.row_spaced{
+margin: 2em auto 2.5em;
+}
+
+//page_body is content - allows us to give it a color and stand out from the top and bottom sections
+///*.page_body{padding: 2em auto;}*/
+
+.inline > li > a {
+margin-right: 1.1538461538em;
+}
+
+ul.sidebar_list li{
+padding-left: 0;
+margin-bottom: 0.7692307692em;
+line-height: 140%;
+list-style-type: none;
+}
+ul.sidebar_list{
+margin:0 0 2em 0;
+}
+
+ul.rss li, ul.list_none li{
+list-style-type: none;
+
+}
+
+.sidebar-section{margin-bottom:2em;}
+
+hr{
+border: 0;
+border-top: 1px solid darken(@lines, 5%);
+border-bottom: 1px solid lighten(@lines, 5%);
+display: block;
+height: 1px;
+width: 70%;
+margin-top: 1em;
+margin-bottom: 3em;
+}
+p a{
+border-bottom: 1px dotted @linkColorHover;
+}
+.text_short p{
+margin-top: 3em;
+margin-bottom: 0;
+text-align: left;
+}
+
+
+//SOCIAL ICONS
+//----------------------------------------------
+
+ul#social_buttons{margin: 0;list-style-type: none;
+float: right;
+padding-top: 1em;
+padding-right: 10px;
+
+}
+
+ul#social_buttons li{margin-bottom: 1em;text-align: center;}
+li#twitter_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 36px;
+background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat left top;
+
+}
+
+li#twitter_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+background-position: left bottom;
+}
+
+
+li#facebook_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 26px;
+background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -35px top;
+}
+
+li#facebook_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+background-position: -35px bottom;
+}
+
+
+
+
+li#vimeo_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 27px;
+
+text-align: -9000em;	
+background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -63px top;
+}
+li#vimeo_icon a:hover{
+
+background-position: -63px bottom;
+}
+
+
+
+li#rss_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 24px;
+
+text-align: -9000em;	
+background: url(/wp-content/themes/pubspring/images/icons/icons-social.png) no-repeat -87px top;
+}
+
+li#rss_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+background-position: -87px bottom;
+}
+
+
+//
+//TEXT
+//-------------------------
+
+blockquote, .quote, .quote p{
+//	color: @red;
+//	  font-size: @baseParagraphFontSize + 5;
+}
+
+.quote_attribution{
+color: @grayDark;
+}
+
+time{
+font-family: @altFontFamily;
+text-transform: uppercase;
+font-size: @baseFontSize - 2;
+color: @grayLight;
+}
+//.post-box{width: 75%;}
+
+.text-right p{
+padding-right: 0.3846153846em;
+text-align: right;
+//	border-right: 3px solid #EEE;
+}
+
+ul.post_list {
+margin-left: 0;
+}
+ul.post_list li
+{
+list-style-type: none;
+line-height: 22px;
+margin-bottom: 1em;
+}
+ul.post_list li a{
+font-size: 18px;
+}
+
+
+.thumbnail{border:none;}
+
+.thumbnail img{.shadow;}
+
+#sidebar article{margin-bottom:1em;}
+
+#sidebar ul li, #sidebar ul {
+list-style-type: none;
+margin-left: 0;
+
+}
+.button{
+.btn;
+}
+
+#mc_signup_submit{
+float: left;
+}
+footer#content-info{
+//	border-top: 1px solid #e6e6e6;
+}
+
+// widget SPECIFIC
+// -----------------------------------------------------
+
+ul.upcoming {list-style-type: none;margin-left: 0;}
+#sidebar ul.upcoming {width: 90%;}
+.frontpage > ul.upcoming li {width: 220px;display:block;float: left;}
+.frontpage > ul.upcoming li div{padding-right: 45px;}
+
+
+li > div.when{color:#478ca3;}
+li > div.event{color:#478ca3;}	
+.frontpage li > div.when{font-size: 1.2em;margin-bottom: .3em;}
+.frontpage li > div.event{font-size: 1.4615384615em;line-height: 1.307em;}	
+
+
+
+.frontpage > .dig-in{text-align: center;padding: 2em auto;font-style: italic;}
+
+
+
+.pull-up{
+margin-top: -85px;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+.hide-on-portrait { 
+display: none;
+}
+.show-on-portrait { 
+display: block;
+}
+.hide-on-tablets { display: none !important; }
+
+}
+
+
+@media (max-width: 768px) {
+
+.pull-up{
+margin-top: 0;
+}
+
+}
+

@@ -1,0 +1,107 @@
+/*!
+ * Bootstrap Responsive v2.1.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+
+// Responsive.less
+// For phone and tablet devices
+// -------------------------------------------------------------
+
+
+// REPEAT VARIABLES & MIXINS
+// -------------------------
+// Required since we compile the responsive stuff separately
+
+//@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+//@import "mixins.less";
+
+
+// RESPONSIVE CLASSES
+// ------------------
+
+@import "responsive-utilities.less";
+
+
+// MEDIA QUERIES
+// ------------------
+
+// Large desktops
+@import "responsive-1200px-min.less";
+
+// Tablets to regular desktops
+@import "responsive-768px-979px.less";
+
+// Phones to portrait tablets and narrow desktops
+@import "responsive-767px-max.less";
+
+
+// RESPONSIVE NAVBAR
+// ------------------
+
+// From 979px and below, show a button to toggle navbar contents
+@import "responsive-navbar.less";
+
+@media (max-width: 1024px) {
+.page_body {
+//	margin-top: 10px;
+//	padding-right: 0;
+//	padding-left: 0;
+//	width: 100%;
+//background: none;
+border: none;
+
+}	
+
+h1 a.brand{
+	font-size: 70px;
+}
+
+.navbar .brand {
+//  float: left;
+  //display: block;
+//  padding: 7px 20px 7px;
+//  margin-left: -20px;
+	font-size: 70px;
+//  font-weight: 200;
+color: @offWhite;
+//  text-shadow: 0 1px 0 #294456;
+}
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+	.wrapper{
+//		@wrapperWidthWide; //width: 100%; //
+		width: 990px;
+	}
+}
+
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.wrapper{
+//		@wrapperWidth;//width: 100%;
+				width: 960px;
+	}
+}
+
+@media (max-width: 767px) {
+.page_body p {
+	text-align: justify;
+}
+	.wrapper{
+		width: 100%;
+	}
+
+}

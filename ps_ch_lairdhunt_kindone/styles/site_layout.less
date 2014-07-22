@@ -1,0 +1,150 @@
+.wf-loading{
+	font-family: Georgia;
+	font-size: 28px;
+}
+
+.wf-loading .hand-writing{
+	display: none;
+}
+.hand-writing{
+	line-height:90%;
+	color: #b7b380;
+//	text-shadow: 1px 3px 3px #000000;
+//	filter: dropshadow(color=#000000, offx=1, offy=3);
+	font-family: @monoFontFamily;
+	font-size: 58px;
+	-moz-transform: scale(1) rotate(-3deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg);
+	-webkit-transform: scale(1) rotate(-3deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg);
+	-o-transform: scale(1) rotate(-3deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg);
+	-ms-transform: scale(1) rotate(-3deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg);
+	transform: scale(1) rotate(-3deg) translateX(10px) translateY(10px) skewX(1deg) skewY(1deg);
+}
+
+footer{
+//	display: none;
+}
+
+.wooslider{overflow: hidden;
+	background-color: #fffcd5;
+	-moz-transform: scale(1) rotate(1deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-webkit-transform: scale(1) rotate(1deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-o-transform: scale(1) rotate(1deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-ms-transform: scale(1) rotate(1deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	transform: scale(1) rotate(1deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+ul.slides{
+	overflow: hidden;
+}
+
+
+h1 a.brand{
+text-transform: uppercase;
+color: @brown;
+color: #533408;
+//opacity: .8;
+}
+
+footer, footer p{
+	font-size: 10px;
+}
+
+// CUSTOM ANIMATION
+
+@-webkit-keyframes swing {
+	13%, 20%, 40%, 60%, 80%, 90%, 100% { -webkit-transform-origin: top center; }
+	13% { -webkit-transform: rotate(-3deg); }	
+	20% { -webkit-transform: rotate(2deg); }	
+	40% { -webkit-transform: rotate(-2deg); }
+	60% { -webkit-transform: rotate(1deg); }	
+	80% { -webkit-transform: rotate(-1deg); }	
+	90% { -webkit-transform: rotate(1deg); }	
+//	95% { -webkit-transform: rotate(-1deg); }	
+	100% { -webkit-transform: rotate(0deg); }
+}
+
+@-moz-keyframes swing {
+	13% { -moz-transform: rotate(3deg); }	
+	20% { -moz-transform: rotate(2deg); }	
+	40% { -moz-transform: rotate(-2deg); }
+	60% { -moz-transform: rotate(1deg); }	
+	80% { -moz-transform: rotate(-1deg); }	
+	90% { -moz-transform: rotate(1deg); }	
+//	95% { -moz-transform: rotate(-1deg); }	
+	100% { -moz-transform: rotate(0deg); }
+}
+
+@-ms-keyframes swing {
+	13% { -ms-transform: rotate(3deg); }	
+	20% { -ms-transform: rotate(2deg); }	
+	40% { -ms-transform: rotate(-2deg); }
+	60% { -ms-transform: rotate(1deg); }	
+	80% { -ms-transform: rotate(-1deg); }	
+	90% { -ms-transform: rotate(1deg); }
+//	95% { -ms-transform: rotate(-1deg); }
+	100% { -ms-transform: rotate(0deg); }
+}
+
+@-o-keyframes swing {
+	13% { -o-transform: rotate(3deg); }	
+	20% { -o-transform: rotate(2deg); }	
+	40% { -o-transform: rotate(-2deg); }
+	60% { -o-transform: rotate(1deg); }	
+	80% { -o-transform: rotate(-1deg); }	
+	90% { -o-transform: rotate(1deg); }
+//	95% { -o-transform: rotate(-1deg); }
+	100% { -o-transform: rotate(0deg); }
+}
+
+@keyframes swing {
+	13% { transform: rotate(3deg); }	
+	20% { transform: rotate(2deg); }	
+	40% { transform: rotate(-2deg); }
+	60% { transform: rotate(1deg); }	
+	80% { transform: rotate(-1deg); }	
+	90% { transform: rotate(1deg); }
+	950% { transform: rotate(-1deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.swing, swing2, swing3 {
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+	-ms-transform-origin: top center;
+	-o-transform-origin: top center;
+	transform-origin: top center;
+	-webkit-animation-name: swing;
+	-moz-animation-name: swing;
+	-ms-animation-name: swing;
+	-o-animation-name: swing;
+	animation-name: swing;
+}
+
+.swing {animation-delay:0s;
+-moz-animation-delay:0s; /* Firefox */
+-webkit-animation-delay:0s; /*Safari and Chrome */
+	-webkit-animation-duration: 23s;
+	-moz-animation-duration: 23s;
+	-ms-animation-duration: 23s;
+	-o-animation-duration: 23s;
+	duration: 11s;
+}
+.swing2{
+	animation-delay:16s;
+}
+.swing3{
+	animation-delay:33s;
+}
+.swing2, .swing3 {
+
+//-moz-animation-delay:10s; /* Firefox */
+//-webkit-animation-delay:10s; /*Safari and Chrome */
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	duration: 5s;
+}
+
+
+//END ANIMATION

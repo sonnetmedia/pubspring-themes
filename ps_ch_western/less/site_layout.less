@@ -1,0 +1,275 @@
+body{
+background: url(images/wood_dk_v1.png) repeat center center #0d0502;	
+}
+
+
+
+body:before{ /* top shadow */ content: ""; position: fixed; top: -10px; left: -10px; width: 110%; height: 10px;  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8); -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8); -ms-box-shadow: 0px 0px 10px rgba(0,0,0,.8); -o-box-shadow: 0px 0px 10px rgba(0,0,0,.8); box-shadow: 0px 0px 10px rgba(0,0,0,.8);  z-index: 100; }
+
+
+.layered-paper {
+padding: 1.5384615385em;
+background: @heroUnitBackgroundColor;
+box-shadow:
+0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+0 10px 0 -5px @heroUnitBackgroundColor, /* The second layer */
+0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+0 20px 0 -10px @heroUnitBackgroundColor, /* The third layer */
+0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
+}
+//.wrapper{background-color: @contentBackgroundColor;} hiding this 
+
+.page_body{
+background-color: @contentBackgroundColor;
+.border-radius-corners(5px, 0px);
+}
+
+
+.padding-top{ 
+//		add this padding if not using a background color for the wrapper 
+padding-top: 3em;
+margin-bottom: 0;
+}
+
+/* (radius-top, radius-bottom) */
+.wrapper{
+.border-radius-corners(0px, 5px);
+}
+/* make sure page body and wrapper corners don't conflict when changing colors */
+
+
+.footer_bio{
+padding-top: 1em;
+.border-radius-corners(0px, 5px);		
+background-color: @blue;
+background-image: none;
+color: @offWhite;
+}
+
+
+.navbanner{
+	text-align: center;
+}
+
+.navbar ul{margin: 20px auto;}
+
+.nav li{display: inline;}
+.nav li a{display: inline-block;}
+.nav-pills li{text-align: center;float: none;}
+
+.nav {
+  font-size: @baseParagraphFontSize + 4;
+}
+
+#menu-top-menu ul
+
+{
+	margin: 15px auto;
+	
+}
+
+
+.nav > li > a:hover {
+background-color: transparent;
+background: none;
+color: lighten(@linkColor, 10%);
+}
+.nav-pills > a:hover, 
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: @headingColor;
+  background: none;
+  background-color: transparent;
+}
+
+.dig-in{margin-bottom: 2em;clear: both;}
+
+
+// widget SPECIFIC
+// -----------------------------------------------------
+	
+ul.upcoming {list-style-type: none;margin-left: 0;}
+#sidebar ul.upcoming {width: 90%;}
+.frontpage > ul.upcoming li {width: 220px;display:block;float: left;}
+.frontpage > ul.upcoming li div{padding-right: 45px;}
+
+
+li > div.when{color:#478ca3;}
+li > div.event{color:#478ca3;}	
+.frontpage li > div.when{font-size: 1.2em;margin-bottom: .3em;}
+.frontpage li > div.event{font-size: 1.4615384615em;line-height: 1.307em;}	
+
+
+
+.frontpage > .dig-in{text-align: center;padding: 2em auto;font-style: italic;}
+
+	
+
+
+
+// TEXT
+// --------------------------------------------------
+
+h1, h2, h3, h4,.nav{font-family: 'Lora', Georgia, 'Times New Roman', serif; font-weight: 400;}
+
+h1, h2, h1.entry-title, h2.entry-title{
+text-shadow: 1px 1px 0 @textShadow;	
+color: @headingColor;	
+}
+
+h1 a.brand{
+color: @headingColor;	
+}
+
+h2, h2 a, h2.entry-title a{
+color: darken(@headingColor, 10%);
+}
+
+h2.entry-title a:link,
+h2.entry-title a:active,
+h2.entry-title a:visited {
+color: @headingColor;	
+}
+
+h2 a:hover{
+color: lighten(@linkColor, 10%);
+}
+
+h3, h3 a{
+color: lighten(@linkColor, 5%);
+}
+
+h3 a:hover{
+color: lighten(@linkColor, 15%);
+}
+
+.caption{font-family:@altFontFamily;font-size: 10px;}
+
+
+li.a{
+color: @linkColor;
+}
+li.current a{
+color: @blue;
+}
+
+h1 a.brand{
+font-size: @baseParagraphLineHeight + 32;
+text-transform: uppercase;
+font-weight: normal;
+text-shadow: 1px 1px 0 #000;		
+}
+
+
+
+//THEME LAYOUTS FROM OLD SETUP
+.navbanner{
+//14px padding at 13px base font
+padding-top: 1em;
+text-align:center;
+}
+
+.article{padding-right:30px;}
+
+.row_spaced{
+margin: 2em auto 2.5em;
+}
+
+//page_body is content - allows us to give it a color and stand out from the top and bottom sections
+///*.page_body{padding: 2em auto;}*/
+
+.shadow {
+-webkit-box-shadow:0px 3px 10px 0px #000000;
+-moz-box-shadow:0px 3px 10px 0px #000000;
+box-shadow:0px 3px 10px 0px #000000;
+}
+
+
+.nav li {
+font-size: @baseParagraphFontSize + 1;
+}
+
+.inline > li > a {
+margin-right: 1.1538461538em;
+}
+
+ul.sidebar_list li{
+padding-left: 0;
+margin-bottom: 0.7692307692em;
+line-height: 140%;
+list-style-type: none;
+}
+ul.sidebar_list{
+margin:0 0 2em 0;
+}
+
+.mt50 { 
+margin-top: 50px;
+}
+
+.flow_left{
+float: left;margin: 0 24px 16px 0;
+}
+.flow_left img{
+margin-bottom: 0px;
+}
+
+
+.right{
+float: right;
+}
+.left{
+float: left;
+}
+
+.footer_bio{
+padding: 1em .5em;
+/*	margin: 5em 0 0;*/
+}
+
+ul.rss li, ul.list_none li{
+list-style-type: none;
+
+}
+
+hr{
+border: 0;
+border-top: 1px solid darken(@lines, 5%);
+border-bottom: 1px solid lighten(@lines, 5%);
+display: block;
+height: 1px;
+width: 70%;
+}
+p a{
+border-bottom: 1px dotted @linkColorHover;
+}
+.text_short p{
+margin-top: 3em;
+margin-bottom: 0;
+text-align: left;
+}
+// NAVBAR THEME OPTIONS
+// --------------------------------------------------
+.navbar-inner_primary {width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+background-color: @headingColor;
+background-image: -moz-linear-gradient(top, @headingColor, darken(@headingColor, 15%));
+background-image: -ms-linear-gradient(top, @headingColor,  darken(@headingColor, 15%));
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@headingColor), to( darken(@headingColor, 15%)));
+background-image: -webkit-linear-gradient(top, @headingColor,  darken(@headingColor, 15%));
+background-image: -o-linear-gradient(top, @headingColor,  darken(@headingColor, 15%));
+background-image: linear-gradient(top, @headingColor,  darken(@headingColor, 15%));
+background-repeat: repeat-x;
+
+}
+
+.navbar-inner_slate{padding-left:20px;padding-right:20px;background-color:#484d52;background-image:-moz-linear-gradient(top, #52575c, #3a3f44);background-image:-ms-linear-gradient(top, #52575c, #3a3f44);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#52575c), to(#3a3f44));background-image:-webkit-linear-gradient(top, #52575c, #3a3f44);background-image:-o-linear-gradient(top, #52575c, #3a3f44);background-image:linear-gradient(top, #52575c, #3a3f44);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#52575c', endColorstr='#3a3f44', GradientType=0);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);}
+
+
+.navbar-inner_silver{padding-left:20px;padding-right:20px;background-color:#f7f7f7;background-image:-moz-linear-gradient(top, #ffffff, #eaeaea);background-image:-ms-linear-gradient(top, #ffffff, #eaeaea);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eaeaea));background-image:-webkit-linear-gradient(top, #ffffff, #eaeaea);background-image:-o-linear-gradient(top, #ffffff, #eaeaea);background-image:linear-gradient(top, #ffffff, #eaeaea);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=0);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);}
+
+
+.nav_bar_page_width .navbar-inner {
+.border-radius-corners(0px, 4px);
+}

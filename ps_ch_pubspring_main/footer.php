@@ -1,0 +1,61 @@
+<?php //push div should remain to help keep footer on bottom on some sites ?>
+		 <div class="push"></div>
+
+
+		</div><!-- End wrapper -->		
+		
+<footer id="content-info" class="clearfix" role="contentinfo">
+	<div class="container">
+<?php 
+	//this loop is for the optional footer 
+	get_template_part('footer_sur'); 
+?>
+
+		<div class="row-fluid">
+			<div class="span7">
+				<p>&copy; <?php echo date('Y'); ?>
+				<img src="<?php echo get_template_directory_uri(); ?>/images/icons/favicon.ico" style="height:12px;padding-bottom:4px;" />
+				<a href="http://pubspring.us" title="PubSpring Network">PubSpring</a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="/terms-of-service/">Terms of Service</a>
+				&nbsp;&nbsp;&nbsp;
+				<a href="/privacy-policy/">Privacy Policy</a>
+&nbsp;&nbsp;&nbsp;
+<a href="/company-information/">Company Information</a>
+				
+				
+				
+				
+				
+				
+				</p>
+			</div>
+
+			<?php 
+			//wp_nav_menu(array('theme_location' => 'utility_navigation', 'container' => false, 'menu_class' => 'span5 footer-nav')); 
+			?>
+		</div>		
+		
+
+
+		
+	</div>
+</footer>
+			
+
+	
+	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+	     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+	<!--[if lt IE 7]>
+		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+	
+	
+		
+	<?php wp_footer(); ?>
+	
+	
+	</div><!-- 	/inner-wrapper  -->
+</body>
+</html>

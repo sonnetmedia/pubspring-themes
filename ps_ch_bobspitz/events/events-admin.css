@@ -1,0 +1,7 @@
+
+#wp-content-editor-tools:before
+{ 
+font-size:22px;
+content:"Post Content: ";
+}
+

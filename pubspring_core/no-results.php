@@ -1,0 +1,1 @@
+<h2 class="page-header">No hay resultados <small>[No Results]</small></h2>
