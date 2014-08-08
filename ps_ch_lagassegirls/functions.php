@@ -83,9 +83,9 @@ add_action('wp_footer', 'wp_cycle_args');
 <style type="text/css">
     h2.subtitle {
         color: black;
-        margin-top: 1em;
         margin-bottom: 1em;
         font-size: 19px;
+        line-height: 1.25;
     }
 
 </style>

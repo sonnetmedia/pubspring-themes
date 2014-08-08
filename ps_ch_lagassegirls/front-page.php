@@ -10,7 +10,7 @@
 	<div class="six phone-four columns image-shadow hide-on-phones">
 			<div class="widget_box" style="padding-bottom:60px;">					
 				<?php //echo do_shortcode ("[catlist id=-7 orderby=rand numberposts=4 thumbnail=no  title_class=cat_title]")   ; ?>
-				<img src="http://lagassegirls.com/files/2014/03/9780738217871Lagasse-200x250.jpg" style="float:left;margin:0 10px 10px 5px;max-height:150px;" class="image-shadow">
+				<img src="/files/2014/07/9780738217871.jpg" style="float:left;margin:0 10px 10px 5px;max-height:150px;" class="image-shadow">
 					<br /><br />
 					<strong>The New Cookbook!<br /><br />Big Flavor, Bold Taste and No Gluten!</strong>
 					<br />
@@ -36,7 +36,7 @@
 			<?php the_excerpt(); ?>
 				<!--<hr />-->
 			<?php endwhile; 
-				echo	"<h6 style='margin-top:16px;'><a href='/category/news/' class='grayDark'>More News &raquo;</a></h6>";		
+				echo	"<h6 style='margin-top:16px;clear:both;'><a href='/category/news/' class='grayDark'>More News &raquo;</a></h6><hr />";		
 			endif; ?>		
 	</div><!-- /four columns -->
 	<div class="six phone-four columns pull-up-400f" style="margin-top:-470px;">
